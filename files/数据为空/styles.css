@@ -173,7 +173,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'MicrosoftYaHei', 'Microsoft YaHei', sans-serif;
+  font-family:'Microsoft YaHei ', 'Microsoft YaHei', sans-serif;
   font-weight:400;
   font-style:normal;
   font-size:12px;
@@ -188,7 +188,7 @@
   width:1369px;
   height:54px;
   display:flex;
-  font-family:'MicrosoftYaHei', 'Microsoft YaHei', sans-serif;
+  font-family:'Microsoft YaHei ', 'Microsoft YaHei', sans-serif;
   font-weight:400;
   font-style:normal;
   font-size:12px;
@@ -302,7 +302,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'MicrosoftYaHei', 'Microsoft YaHei', sans-serif;
+  font-family:'Microsoft YaHei ', 'Microsoft YaHei', sans-serif;
   font-weight:400;
   font-style:normal;
   font-size:12px;
@@ -317,7 +317,7 @@
   width:48px;
   height:54px;
   display:flex;
-  font-family:'MicrosoftYaHei', 'Microsoft YaHei', sans-serif;
+  font-family:'Microsoft YaHei ', 'Microsoft YaHei', sans-serif;
   font-weight:400;
   font-style:normal;
   font-size:12px;
@@ -719,7 +719,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'PingFangSC-Regular', 'PingFang SC', sans-serif;
+  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
   font-weight:400;
   font-style:normal;
   font-size:16px;
@@ -735,7 +735,7 @@
   width:64px;
   height:40px;
   display:flex;
-  font-family:'PingFangSC-Regular', 'PingFang SC', sans-serif;
+  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
   font-weight:400;
   font-style:normal;
   font-size:16px;
@@ -877,7 +877,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC', sans-serif;
+  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
   font-weight:650;
   font-style:normal;
   font-size:16px;
@@ -893,7 +893,7 @@
   width:160px;
   height:64px;
   display:flex;
-  font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC', sans-serif;
+  font-family:'PingFang SC ', 'PingFang SC', sans-serif;
   font-weight:650;
   font-style:normal;
   font-size:16px;
