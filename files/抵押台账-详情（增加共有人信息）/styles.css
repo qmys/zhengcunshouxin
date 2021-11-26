@@ -16,7 +16,7 @@
   position:absolute;
   z-index:0;
 }
-#u510_img {
+#u521_img {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -24,7 +24,7 @@
   width:1536px;
   height:722px;
 }
-#u510 {
+#u521 {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -33,20 +33,20 @@
   height:722px;
   display:flex;
 }
-#u510 .text {
+#u521 .text {
   position:absolute;
   align-self:center;
   padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
 }
-#u510_text {
+#u521_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
   visibility:hidden;
 }
-#u511_img {
+#u522_img {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -54,7 +54,7 @@
   width:1397px;
   height:122px;
 }
-#u511 {
+#u522 {
   border-width:0px;
   position:absolute;
   left:75px;
@@ -63,20 +63,20 @@
   height:122px;
   display:flex;
 }
-#u511 .text {
+#u522 .text {
   position:absolute;
   align-self:center;
   padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
 }
-#u511_text {
+#u522_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
   visibility:hidden;
 }
-#u512_div {
+#u523_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -91,7 +91,7 @@
   -webkit-box-shadow:none;
   box-shadow:none;
 }
-#u512 {
+#u523 {
   border-width:0px;
   position:absolute;
   left:75px;
@@ -100,20 +100,20 @@
   height:492px;
   display:flex;
 }
-#u512 .text {
+#u523 .text {
   position:absolute;
   align-self:center;
   padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
 }
-#u512_text {
+#u523_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
   visibility:hidden;
 }
-#u513_div {
+#u524_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -128,7 +128,7 @@
   -webkit-box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
   box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-#u513 {
+#u524 {
   border-width:0px;
   position:absolute;
   left:1589px;
@@ -137,14 +137,14 @@
   height:150px;
   display:flex;
 }
-#u513 .text {
+#u524 .text {
   position:absolute;
   align-self:flex-start;
   padding:10px 10px 10px 10px;
   box-sizing:border-box;
   width:100%;
 }
-#u513_text {
+#u524_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;

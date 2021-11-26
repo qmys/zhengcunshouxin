@@ -49,90 +49,10 @@
     <div id="base" class="">
 
       <!-- Unnamed (矩形) -->
-      <div id="u398" class="ax_default heading_1">
-        <div id="u398_div" class=""></div>
-        <div id="u398_text" class="text ">
-          <p><span>性能需求</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u399" class="ax_default heading_2">
-        <div id="u399_div" class=""></div>
-        <div id="u399_text" class="text ">
-          <p><span>1、速度需求</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u400" class="ax_default paragraph">
-        <div id="u400_div" class=""></div>
-        <div id="u400_text" class="text ">
-          <p><span>APP的常见性能要求包含以下几点：</span></p><p><span><br></span></p><p><span>1、启动响应</span></p><p><span>1）冷启动：首次启动app的时间间隔（只是启动时间，不包括页面加载）</span></p><p><span>2）热启动：非首次启动app的时间间隔（只是启动时间，不包括页面加载）</span></p><p><span>3）完全启动：从启动到首页完全加载出来的时间间隔</span></p><p><span>4）有网启动：从发起跳转，到页面完全加载出来的时间间隔</span></p><p><span>5）无网启动：从发起跳转，到页面完全加载出来的时间间隔</span></p><p><span>（在项目中，主要测试关注点是冷启动，热启动）</span></p><p><span><br></span></p><p><span>2、内存</span></p><p><span>在Android系统中，每个APP进程除了同其他进程共享内存(shared dirty)外，还独用私有内存(private dirty)，通常我们使用PSS(私有内存+比例分配共享内存)来衡量一个APP的内存开销。由于一个移动设备的内存是固定的，如果内存消耗过大就会造成应用卡顿或者闪退，需要对内存进行测试。正常情况下，应用不应占用过多的内存资源，且能够及时释放内存，保证整个应用内的稳定性和流畅性。</span></p><p><span>1）空闲状态：切换至后台或者启动后不做任何操作，消耗内存最少。</span></p><p><span>2）中强度状态：时间偏长的操作应用。</span></p><p><span>3）高强度状态：高强度使用应用，保障内存无泄漏。</span></p><p><span>内存泄漏：指应用里的内存一直没有释放，内存一直增加 ,系统内存一直减少。</span></p><p><span><br></span></p><p><span>3、CPU</span></p><p><span>主要关注的是cpu的占用率。很多时候，在使用手机应用时，会出现发热发烫，那是因为CPU使用率过高，CPU过于繁忙，会使整个手机无法响应用户操作，整体性能降低，用户体验就会很差。</span></p><p><span><br></span></p><p><span>4、FPS（APP使用的流畅度）</span></p><p><span>FPS是图像领域中的定义，是指画面每秒传输帧数，通俗来讲就是指动画或视频的画面数。FPS是测量用于保存、显示动态视频的信息数量。每秒钟帧数愈多，所显示的动作就会愈流畅。</span></p><p><span>一般来说，Android设备的屏幕刷新率为60帧/s，要保持画面流畅不卡顿，要求每一帧的时间不超过1000/60=16.6ms，这就是16ms的黄金准则，如果中间的某些帧的渲染时间超过16ms，就会导致这段时间的画面发生了跳帧，因此原本流畅的画面变发生了卡顿。</span></p><p><span>注：资农通承载的业务应用有较高可能性存在图像/动画/视频等内容的呈现，所以在这里提出来相关的要求。</span></p><p><span><br></span></p><p><span>5、耗电</span></p><p><span>平台及业务应用对电量的消耗。需保障以下几点：</span></p><p><span>1）安装APP前后待机功耗无明显差异；</span></p><p><span>2）常见使用场景中能够正常进入待机，待机电流在正常范围内；</span></p><p><span>3）长时间连续使用应用无异常耗电现象。</span></p><p><span><br></span></p><p><span>6、耗流</span></p><p><span>平台及业务应用对流量的消耗。需保障以下几点：</span></p><p><span>1）安装APP前后待机流量消耗无明显差异；</span></p><p><span>2）进入后台运行后原则上不能有明显的流量消耗；</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u401" class="ax_default heading_2">
-        <div id="u401_div" class=""></div>
-        <div id="u401_text" class="text ">
-          <p><span>2、安全性需求</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u402" class="ax_default paragraph">
-        <div id="u402_div" class=""></div>
-        <div id="u402_text" class="text ">
-          <p><span>1、具有把关键应用服务器和数据库服务器进行分离，防止用户对数据库服务器的直接操作，保证数据库安全。</span></p><p><span>2、应用系统在传输过程中需要对数据进行加密处理，比如密码、身份证号码、地址、联系电话（电话号码）字段进行处理，默认采用国产的SM4算法。若后续银行有其它算法，可以实现快速更换。</span></p><p><span>3、整村授信系统（管理系统、APP）应该有严格的细粒度化的权限区分和数据权限区分，避免数据泄露。</span></p><p><span>4、系统应该具备数据备份能力，遵循一天一备（增量）、一周一备份（全量）的原则。</span></p><p><span>5、系统具有很强的容错能力，错误恢复能力，错误记录及预警能力，同时具备异地容灾能力。</span></p><p><span>6、APP发布前，做好扫描和加固。扫描可以通过静态代码分析、动态数据跟踪，定位出风险代码（目前好多都是只告诉APK包里面有风险），同时监控敏感数据的异常行为。</span></p><p><span>7、加固可以在一定程度上保护自己核心代码算法,提高破解/盗版/二次打包的难度，缓解代码注入/动态调试/内存注入攻击等。</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u403" class="ax_default heading_2">
-        <div id="u403_div" class=""></div>
-        <div id="u403_text" class="text ">
-          <p><span>3、精度需求</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u404" class="ax_default paragraph">
-        <div id="u404_div" class=""></div>
-        <div id="u404_text" class="text ">
-          <p><span>所有数值数据精确到小数点后两位。</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u405" class="ax_default heading_2">
-        <div id="u405_div" class=""></div>
-        <div id="u405_text" class="text ">
-          <p><span>4、可靠性和可用性需求</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u406" class="ax_default paragraph">
-        <div id="u406_div" class=""></div>
-        <div id="u406_text" class="text ">
-          <p><span>1、用户和密码封闭性。平台对用户名和密码需要进行校验，同时具备保护措施。</span></p><p><span>2、对密码错误登陆次数的限制。密码错误三次，锁定账号5分钟内禁止登陆尝试。</span></p><p><span>3、异常情况的影响。在运行过程中需要进行掉电试验，考查数据和系统的受影响程度。</span></p><p><span>4、网络故障对系统的影响。当网络中断连接时，需保证数据不会丢失。</span></p><p><span>5、错误提示的准确性。当用户操作错误或软件发生错误时，能否有准确清晰的提示，使用户知道造成错误的原因。</span></p><p><span>6、保证错误操作情况下进行系统内提示，而不会导致系统异常退出。</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u407" class="ax_default heading_2">
-        <div id="u407_div" class=""></div>
-        <div id="u407_text" class="text ">
-          <p><span>5、容量需求</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u408" class="ax_default paragraph">
+      <div id="u408" class="ax_default heading_1">
         <div id="u408_div" class=""></div>
         <div id="u408_text" class="text ">
-          <p><span>系统对图片、文本文档等非结构化数据的支持能力不小于200TB；</span></p><p><span>对结构化数据的存储和查询数据量支持能力不小于500GB。</span></p>
+          <p><span>性能需求</span></p>
         </div>
       </div>
 
@@ -140,7 +60,7 @@
       <div id="u409" class="ax_default heading_2">
         <div id="u409_div" class=""></div>
         <div id="u409_text" class="text ">
-          <p><span>6、并发需求</span></p>
+          <p><span>1、速度需求</span></p>
         </div>
       </div>
 
@@ -148,7 +68,7 @@
       <div id="u410" class="ax_default paragraph">
         <div id="u410_div" class=""></div>
         <div id="u410_text" class="text ">
-          <p><span>1、应用访问并发： 系统软件（应用软件）具备不少于 117+1*2+25*2 =&nbsp; 169 的访问并发的能力（117个村，每村一人，25个支行，支行有行长和管理人员（25*2），总行为行长和信贷主任（1*2））</span></p><p><span>2、传输并发：系统业务功能包括附件和图片的传输的时候，需提供稳定快速的传输效率，以及支持多附件多图片并发上传和下载的能力。</span></p>
+          <p><span>APP的常见性能要求包含以下几点：</span></p><p><span><br></span></p><p><span>1、启动响应</span></p><p><span>1）冷启动：首次启动app的时间间隔（只是启动时间，不包括页面加载）</span></p><p><span>2）热启动：非首次启动app的时间间隔（只是启动时间，不包括页面加载）</span></p><p><span>3）完全启动：从启动到首页完全加载出来的时间间隔</span></p><p><span>4）有网启动：从发起跳转，到页面完全加载出来的时间间隔</span></p><p><span>5）无网启动：从发起跳转，到页面完全加载出来的时间间隔</span></p><p><span>（在项目中，主要测试关注点是冷启动，热启动）</span></p><p><span><br></span></p><p><span>2、内存</span></p><p><span>在Android系统中，每个APP进程除了同其他进程共享内存(shared dirty)外，还独用私有内存(private dirty)，通常我们使用PSS(私有内存+比例分配共享内存)来衡量一个APP的内存开销。由于一个移动设备的内存是固定的，如果内存消耗过大就会造成应用卡顿或者闪退，需要对内存进行测试。正常情况下，应用不应占用过多的内存资源，且能够及时释放内存，保证整个应用内的稳定性和流畅性。</span></p><p><span>1）空闲状态：切换至后台或者启动后不做任何操作，消耗内存最少。</span></p><p><span>2）中强度状态：时间偏长的操作应用。</span></p><p><span>3）高强度状态：高强度使用应用，保障内存无泄漏。</span></p><p><span>内存泄漏：指应用里的内存一直没有释放，内存一直增加 ,系统内存一直减少。</span></p><p><span><br></span></p><p><span>3、CPU</span></p><p><span>主要关注的是cpu的占用率。很多时候，在使用手机应用时，会出现发热发烫，那是因为CPU使用率过高，CPU过于繁忙，会使整个手机无法响应用户操作，整体性能降低，用户体验就会很差。</span></p><p><span><br></span></p><p><span>4、FPS（APP使用的流畅度）</span></p><p><span>FPS是图像领域中的定义，是指画面每秒传输帧数，通俗来讲就是指动画或视频的画面数。FPS是测量用于保存、显示动态视频的信息数量。每秒钟帧数愈多，所显示的动作就会愈流畅。</span></p><p><span>一般来说，Android设备的屏幕刷新率为60帧/s，要保持画面流畅不卡顿，要求每一帧的时间不超过1000/60=16.6ms，这就是16ms的黄金准则，如果中间的某些帧的渲染时间超过16ms，就会导致这段时间的画面发生了跳帧，因此原本流畅的画面变发生了卡顿。</span></p><p><span>注：资农通承载的业务应用有较高可能性存在图像/动画/视频等内容的呈现，所以在这里提出来相关的要求。</span></p><p><span><br></span></p><p><span>5、耗电</span></p><p><span>平台及业务应用对电量的消耗。需保障以下几点：</span></p><p><span>1）安装APP前后待机功耗无明显差异；</span></p><p><span>2）常见使用场景中能够正常进入待机，待机电流在正常范围内；</span></p><p><span>3）长时间连续使用应用无异常耗电现象。</span></p><p><span><br></span></p><p><span>6、耗流</span></p><p><span>平台及业务应用对流量的消耗。需保障以下几点：</span></p><p><span>1）安装APP前后待机流量消耗无明显差异；</span></p><p><span>2）进入后台运行后原则上不能有明显的流量消耗；</span></p>
         </div>
       </div>
 
@@ -156,7 +76,7 @@
       <div id="u411" class="ax_default heading_2">
         <div id="u411_div" class=""></div>
         <div id="u411_text" class="text ">
-          <p><span>7、响应需求</span></p>
+          <p><span>2、安全性需求</span></p>
         </div>
       </div>
 
@@ -164,7 +84,7 @@
       <div id="u412" class="ax_default paragraph">
         <div id="u412_div" class=""></div>
         <div id="u412_text" class="text ">
-          <p><span>1、查询响应： 功能响应时间应小于1秒。整村授信中的分析模块由于需要比对数据且可能存在一定的数据量，原则上结果响应时长上不超过3秒。平台上业务应用响应时间依据数据量而定，原则上百万级响应时间不超过1秒。</span></p><p><span><br></span></p>
+          <p><span>1、具有把关键应用服务器和数据库服务器进行分离，防止用户对数据库服务器的直接操作，保证数据库安全。</span></p><p><span>2、应用系统在传输过程中需要对数据进行加密处理，比如密码、身份证号码、地址、联系电话（电话号码）字段进行处理，默认采用国产的SM4算法。若后续银行有其它算法，可以实现快速更换。</span></p><p><span>3、整村授信系统（管理系统、APP）应该有严格的细粒度化的权限区分和数据权限区分，避免数据泄露。</span></p><p><span>4、系统应该具备数据备份能力，遵循一天一备（增量）、一周一备份（全量）的原则。</span></p><p><span>5、系统具有很强的容错能力，错误恢复能力，错误记录及预警能力，同时具备异地容灾能力。</span></p><p><span>6、APP发布前，做好扫描和加固。扫描可以通过静态代码分析、动态数据跟踪，定位出风险代码（目前好多都是只告诉APK包里面有风险），同时监控敏感数据的异常行为。</span></p><p><span>7、加固可以在一定程度上保护自己核心代码算法,提高破解/盗版/二次打包的难度，缓解代码注入/动态调试/内存注入攻击等。</span></p>
         </div>
       </div>
 
@@ -172,7 +92,7 @@
       <div id="u413" class="ax_default heading_2">
         <div id="u413_div" class=""></div>
         <div id="u413_text" class="text ">
-          <p><span>8、架构特性</span></p>
+          <p><span>3、精度需求</span></p>
         </div>
       </div>
 
@@ -180,6 +100,86 @@
       <div id="u414" class="ax_default paragraph">
         <div id="u414_div" class=""></div>
         <div id="u414_text" class="text ">
+          <p><span>所有数值数据精确到小数点后两位。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u415" class="ax_default heading_2">
+        <div id="u415_div" class=""></div>
+        <div id="u415_text" class="text ">
+          <p><span>4、可靠性和可用性需求</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u416" class="ax_default paragraph">
+        <div id="u416_div" class=""></div>
+        <div id="u416_text" class="text ">
+          <p><span>1、用户和密码封闭性。平台对用户名和密码需要进行校验，同时具备保护措施。</span></p><p><span>2、对密码错误登陆次数的限制。密码错误三次，锁定账号5分钟内禁止登陆尝试。</span></p><p><span>3、异常情况的影响。在运行过程中需要进行掉电试验，考查数据和系统的受影响程度。</span></p><p><span>4、网络故障对系统的影响。当网络中断连接时，需保证数据不会丢失。</span></p><p><span>5、错误提示的准确性。当用户操作错误或软件发生错误时，能否有准确清晰的提示，使用户知道造成错误的原因。</span></p><p><span>6、保证错误操作情况下进行系统内提示，而不会导致系统异常退出。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u417" class="ax_default heading_2">
+        <div id="u417_div" class=""></div>
+        <div id="u417_text" class="text ">
+          <p><span>5、容量需求</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u418" class="ax_default paragraph">
+        <div id="u418_div" class=""></div>
+        <div id="u418_text" class="text ">
+          <p><span>系统对图片、文本文档等非结构化数据的支持能力不小于200TB；</span></p><p><span>对结构化数据的存储和查询数据量支持能力不小于500GB。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u419" class="ax_default heading_2">
+        <div id="u419_div" class=""></div>
+        <div id="u419_text" class="text ">
+          <p><span>6、并发需求</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u420" class="ax_default paragraph">
+        <div id="u420_div" class=""></div>
+        <div id="u420_text" class="text ">
+          <p><span>1、应用访问并发： 系统软件（应用软件）具备不少于 117+1*2+25*2 =&nbsp; 169 的访问并发的能力（117个村，每村一人，25个支行，支行有行长和管理人员（25*2），总行为行长和信贷主任（1*2））</span></p><p><span>2、传输并发：系统业务功能包括附件和图片的传输的时候，需提供稳定快速的传输效率，以及支持多附件多图片并发上传和下载的能力。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u421" class="ax_default heading_2">
+        <div id="u421_div" class=""></div>
+        <div id="u421_text" class="text ">
+          <p><span>7、响应需求</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u422" class="ax_default paragraph">
+        <div id="u422_div" class=""></div>
+        <div id="u422_text" class="text ">
+          <p><span>1、查询响应： 功能响应时间应小于1秒。整村授信中的分析模块由于需要比对数据且可能存在一定的数据量，原则上结果响应时长上不超过3秒。平台上业务应用响应时间依据数据量而定，原则上百万级响应时间不超过1秒。</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u423" class="ax_default heading_2">
+        <div id="u423_div" class=""></div>
+        <div id="u423_text" class="text ">
+          <p><span>8、架构特性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u424" class="ax_default paragraph">
+        <div id="u424_div" class=""></div>
+        <div id="u424_text" class="text ">
           <p><span>1、可靠性： 系统需提供7*24的不间断服务。</span></p><p><span>2、稳定性：系统需合理的利用资源，保证前后台数据操作的效率，以及在数据响应和界面承载方面都要达到不会出现界面混乱、数据报错、触发按钮功能缺失、操作频繁或者快速容易崩溃的问题。</span></p><p><span>3、兼容性：前端页面方面具有兼容各大主流浏览器的能力。（谷歌70及以上版本，IE10及以上版本以及360等国内主流浏览器版本）</span></p><p><span>4、诊断性：为了防止操作失误，应该将用户的操作过程信息以日志形式保存，以作为失误诊断的原始依据。</span></p><p><span>5、 扩充性：保证开发的平台和系统对未来发展的适应性，并应当充分考虑技术进步因素的影响。</span></p><p><span>6、开放性：系统总体上不是一个封闭的系统，今后会跟农信社的系统进行对接，在平台建设中应充分考虑与外界信息系统交换的需求，保证既能满足基本功能的需要，又具有与农信社其它系统进行信息交换、处理、分析的能力。</span></p><p><span>7、经济性：系统应具备高性价比，能对系统资源的使用进行优化，在实现系统功能的前提下，尽量节省硬件资源的开销。</span></p><p><span><br></span></p>
         </div>
       </div>
