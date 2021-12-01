@@ -1,18 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="144px" height="84px" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter x="594px" y="9690px" width="144px" height="84px" filterUnits="userSpaceOnUse" id="filter63">
-      <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner" />
-      <feGaussianBlur stdDeviation="2" in="shadowOffsetInner" result="shadowGaussian" />
-      <feComposite in2="shadowGaussian" operator="atop" in="SourceAlpha" result="shadowComposite" />
-      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.2 0  " in="shadowComposite" />
-    </filter>
-    <g id="widget64">
-      <path d="M 598 9697  A 4 4 0 0 1 602 9693 L 730 9693  A 4 4 0 0 1 734 9697 L 734 9765  A 4 4 0 0 1 730 9769 L 602 9769  A 4 4 0 0 1 598 9765 L 598 9697  Z " fill-rule="nonzero" fill="#000000" stroke="none" fill-opacity="0.749019607843137" />
-    </g>
-  </defs>
-  <g transform="matrix(1 0 0 1 -594 -9690 )">
-    <use xlink:href="#widget64" filter="url(#filter63)" />
-    <use xlink:href="#widget64" />
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1 0 0 1 -703 -9408 )">
+    <path d="M 732.333511537483 9408.61306260062  C 733.22026999089 9408.53772771924  734.109897522075 9408.5  735 9408.5  C 752.39696961967 9408.5  766.5 9422.60303038033  766.5 9440  C 766.5 9457.39696961967  752.39696961967 9471.5  735 9471.5  C 718.852014491796 9471.5  705.349015581785 9459.29642682772  703.672190417079 9443.28974163612  L 735.044318343823 9440.49803201142  A 0.5 0.5 0 0 0 735.497470760719 9439.9497720971 L 732.333511537502 9408.61306260062  Z " fill-rule="nonzero" fill="#0096fa" stroke="none" />
+    <path d="M 732.333511537483 9408.61306260062  C 733.22026999089 9408.53772771924  734.109897522075 9408.5  735 9408.5  C 752.39696961967 9408.5  766.5 9422.60303038033  766.5 9440  C 766.5 9457.39696961967  752.39696961967 9471.5  735 9471.5  C 718.852014491796 9471.5  705.349015581785 9459.29642682772  703.672190417079 9443.28974163612  L 735.044318343823 9440.49803201142  A 0.5 0.5 0 0 0 735.497470760719 9439.9497720971 L 732.333511537502 9408.61306260062  Z " stroke-width="1" stroke="#ffffff" fill="none" />
   </g>
 </svg>
